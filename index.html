@@ -3,16 +3,50 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="./css/screen.css" type="text/css" media="screen, projection" />  
-<link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />  
-<!--[if IE]>  
-<link rel="stylesheet" href="./css/ie.css" type="text/css" media="screen, projection" />  
-<![endif]-->  
-<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen, projection" />
-
+<link rel="stylesheet" href="CSS/reset.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="CSS/golden.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="CSS/typography.css" type="text/css" media="screen, projection">
+<script src="./js/jquery-1.4.1.min.js" type="text/javascript"></script>
+<script src="./js/jquery.curvycorners.packed.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+    $('.roundcorner').corner({ // 個別処理の場合
+tl: { radius: 12 }, // 左上コーナーの半径
+tr: { radius: 12 }, // 右上コーナーの半径：falseで設定なし
+bl: { radius: 12 }, // 左下コーナーの半径：falseで設定なし
+br: { radius: 12 }, // 右下コーナーの半径
+antiAlias: true, // アンチエイリアス：trueで設定あり
+autoPad: false, // パディング処理：trueで設定あり
+validTags: ["div"] });
+});
+</script>
 <title>Yutori</title>
+<style>
+body {
+				background-color: #fff;
+}
+.main {
+				background-color: #eee;
+}
+#nav {
+				margin: 0;
+				padding: 5 0 0 0px;
+				list-style-type: none; /*background-color: #999999;*/;
+				font-size: 1.2em; /*font-weight: 700;*/;
+				float: left;
+				color: #ccc;
+}
+#nav li {
+				margin: 0;
+				padding: 0;
+				float: left;
+				width: 140px;
+}
+</style>
 </head>
+
 <body>
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -26,15 +60,40 @@
   })();
 
 </script>
-<h1>Welcome to Yutori</h1>
-<h1>We are to offer "Yutori" to manufacturing industries all over the world!
-</h1>
-<h1>More details will soon be revealed on <a href="http://yutori.jp" rel="nofollow" target="_blank"><span class="style3">http://yutori.jp</a>
-<br />
-</h1>
-<h1>The first offer is &quot;Yutori for Designers&quot;.</h1>
-<h1>twitter hush tag: #yutori<br />
-</h1>
+<div style="background-color: #333; height: 20px; margin-bottom: 10px;">
+				<ul id="nav">
+								<li>About Yutori</li>
+								<li>Why &quot;Yutori&quot;?</li>
+				</ul>
+</div>
+<div class="main">
+				<div class="g960" style="height: 360px">
+								<div class="g720 inside">
+												<div class="roundcorner" style="background-image: url('img/fujiyama.jpg'); height: 330px;">
+&nbsp; </div>
+								</div>
+								<div class="g240">
+												<h1>FUJIYMA</h1>
+												<p>Bill of Material Editor</p>
+												<p></p>
+								</div>
+								<div class="clear">
+								</div>
+				</div>
+				<div class="g960">
+								<h1>Welcome to Yutori</h1>
+								<p>We are to offer &quot;Yutori&quot; to manufacturing industries 
+								all over the world! </p>
+								<p>More details will soon be revealed on
+								<a href="http://yutori.jp" rel="nofollow" target="_blank">
+								http://yutori.jp</a> <br />
+								</p>
+								<p>The first offer is &quot;Yutori for Designers&quot;.
+								</p>
+								<p>twitter hush tag: #yutori </p>
+				</div>
+</div>
+
 </body>
 
 </html>
