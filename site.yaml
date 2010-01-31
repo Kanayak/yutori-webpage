@@ -4,7 +4,5 @@
   upload: '.*'
 - url: '/'
   static_dir: '/'
-- url: '/css/(.*\.css)'
-  static_files: 'css/\1'
-  upload: 'css/(.*\.css)'
+- url: '/css'
   mime_type: 'text/css'
